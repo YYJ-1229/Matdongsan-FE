@@ -1,27 +1,33 @@
+import "../../App.css";
+
 export interface ButtonProps {
-  variant: "primary" | "secondary";
-  size?: "small" | "large";
+  variant: "primaryBlue" | "primaryDark" | "secondaryGray" | "secondaryLight";
+  size: "extraSmall" | "small" | "medium" | "large";
   label: string;
   onClick?: () => void;
   disabled?: boolean;
 }
 
-export const Button = ({
-  variant = "primary",
-  label,
-  size = "large",
-  ...props
-}: ButtonProps) => {
-  const baseStyles = "w-[345px] h-[48px] py-12 px-8 rounded-lg";
+export const Button = ({ variant, label, size, ...props }: ButtonProps) => {
+  const baseStyles =
+    "px-8 rounded-lg flex items-center justify-center font-[SUIT_Bold] font-semibold tracking-tight";
 
   const variants = {
-    primary: "bg-[#47B7E5] text-white",
-    secondary: "bg-gray-200 text-gray-500 hover:bg-gray-700"
+    primaryBlue:
+      "bg-[var(--brand-skyblue-50)] text-[var(--neutral-basic-white)]",
+    primaryDark:
+      "bg-[var(--neutral-warmgray-50)] text-[var(--neutral-basic-white)]",
+    secondaryGray:
+      "bg-[var(--neutral-coolgray-20)] text-[var(--neutral-coolgray-60)]",
+    secondaryLight:
+      "bg-[var(--neutral-gray-10)] text-[var(--neutral-coolgray-50)]"
   };
 
   const sizeStyles = {
-    small: "h-[40px] py-[10px] text-sm",
-    large: "h-[56px] py-[16px] text-base"
+    extraSmall: "w-[116px] h-[40px] py-[14px] text-sm",
+    small: "w-[168px] h-[48px] py-[10px] text-sm",
+    medium: "w-[240px] h-[46px] py-[14px] text-base",
+    large: "w-[345px] h-[56px] py-[16px] text-base"
   };
 
   return (

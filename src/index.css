@@ -14,6 +14,119 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --neutral-basic-white: #fff;
+  --neutral-basic-black: #000;
+  --neutral-gray-10: #f4f4f4;
+  --neutral-gray-20: #e0e0e0;
+  --neutral-gray-30: #c6c6c6;
+  --neutral-gray-40: #a8a8a8;
+  --neutral-gray-50: #8d8d8d;
+  --neutral-gray-60: #6f6f6f;
+  --neutral-gray-70: #525252;
+  --neutral-gray-80: #393939;
+  --neutral-gray-90: #262626;
+  --neutral-gray-100: #161616;
+  --neutral-coolgray-10: #f2f4f8;
+  --neutral-coolgray-20: #dde1e6;
+  --neutral-coolgray-30: #c1c7cd;
+  --neutral-coolgray-40: #a2a9b0;
+  --neutral-coolgray-50: #878d96;
+  --neutral-coolgray-60: #697077;
+  --neutral-coolgray-70: #4d5358;
+  --neutral-coolgray-80: #343a3f;
+  --neutral-coolgray-90: #21272a;
+  --neutral-coolgray-100: #121619;
+  --neutral-warmgray-10: #f7f3f2;
+  --neutral-warmgray-20: #e5e0df;
+  --neutral-warmgray-30: #cac5c4;
+  --neutral-warmgray-40: #ada8a8;
+  --neutral-warmgray-50: #8f8b8b;
+  --neutral-warmgray-100: #171414;
+  --neutral-warmgray-90: #272525;
+  --neutral-warmgray-80: #3c3838;
+  --neutral-warmgray-70: #565151;
+  --neutral-warmgray-60: #726e6e;
+  --brand-yellow-10: #fffae0;
+  --brand-yellow-20: #fff3ad;
+  --brand-yellow-30: #ffeb7b;
+  --brand-yellow-40: #fbe56a;
+  --brand-yellow-50: #fbe044;
+  --brand-skyblue-10: #e5f5fc;
+  --brand-skyblue-20: #c6eeff;
+  --brand-skyblue-30: #91d9f8;
+  --brand-skyblue-40: #69caf3;
+  --brand-skyblue-50: #47b7e5;
+  --brand-green-10: #eaf6e8;
+  --brand-green-20: #b5ebad;
+  --brand-green-30: #93db88;
+  --brand-green-40: #71cc63;
+  --brand-green-50: #51be40;
+  --brand-orange-10: #ffe4ce;
+  --brand-orange-20: #ffc89b;
+  --brand-orange-30: #fdb071;
+  --brand-orange-40: #fe9641;
+  --brand-orange-50: #ff8725;
+  --system-cyan-10: #e5f6ff;
+  --system-cyan-20: #bae6ff;
+  --system-cyan-30: #82cfff;
+  --system-cyan-40: #33b1ff;
+  --system-cyan-50: #1192e8;
+  --system-cyan-60: #0072c3;
+  --system-cyan-70: #00539a;
+  --system-cyan-80: #003a6d;
+  --system-cyan-90: #012749;
+  --system-cyan-100: #061727;
+  --system-green-10: #defbe6;
+  --system-green-20: #a7f0ba;
+  --system-green-30: #6fdc8c;
+  --system-green-40: #42be65;
+  --system-green-80: #044317;
+  --system-green-70: #0e6027;
+  --system-green-60: #198038;
+  --system-green-50: #24a148;
+  --system-green-90: #022d0d;
+  --system-green-100: #071908;
+  --system-magenta-10: #fff0f7;
+  --system-magenta-20: #ffd6e8;
+  --system-magenta-30: #ffafd2;
+  --system-magenta-40: #ff7eb6;
+  --system-magenta-50: #ee5396;
+  --system-magenta-60: #d02670;
+  --system-magenta-70: #9f1853;
+  --system-magenta-80: #740937;
+  --system-magenta-90: #510224;
+  --system-magenta-100: #2a0a18;
+  --system-purple-10: #f6f2ff;
+  --system-purple-20: #e8daff;
+  --system-purple-30: #d4bbff;
+  --system-purple-40: #be95ff;
+  --system-purple-50: #a56eff;
+  --system-purple-60: #8a3ffc;
+  --system-purple-70: #6929c4;
+  --system-purple-80: #491d8b;
+  --system-purple-90: #31135e;
+  --system-purple-100: #1c0f30;
+  --system-red-10: #fff1f1;
+  --system-red-20: #ffd7d9;
+  --system-red-30: #ffb3b8;
+  --system-red-40: #ff8389;
+  --system-red-50: #fa4d56;
+  --system-red-60: #da1e28;
+  --system-red-70: #a2191f;
+  --system-red-80: #750e13;
+  --system-red-90: #520408;
+  --system-red-100: #2d0709;
+  --system-teal-10: #d9fbfb;
+  --system-teal-20: #9ef0f0;
+  --system-teal-30: #3ddbd9;
+  --system-teal-40: #08bdba;
+  --system-teal-50: #009d9a;
+  --system-teal-60: #007d79;
+  --system-teal-70: #005d5d;
+  --system-teal-80: #004144;
+  --system-teal-90: #022b30;
+  --system-teal-100: #081a1c;
 }
 
 /* a {
@@ -67,4 +180,27 @@ button:focus-visible {
   a:hover {
     color: #747bff;
   }
+}
+
+@font-face {
+  font-family: "SUIT_Regular";
+  src: url("./assets/font/suit/SUIT-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SUIT_SemiBold";
+  src: url("./assets/font/suit/SUIT-SemiBold.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SUIT_Bold";
+  src: url("./assets/font/suit/SUIT-Bold.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "SUIT_Light";
+  src: url("./assets/font/suit/SUIT-Light.ttf") format("truetype");
+  font-style: normal;
 }
