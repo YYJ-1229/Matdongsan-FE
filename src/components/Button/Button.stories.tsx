@@ -17,32 +17,34 @@ const meta: Meta<typeof Button> = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Primary: Story = {
+export const PrimaryBlue: Story = {
   args: {
-    variant: "primary",
-    label: "투표하기"
-  }
-};
-
-export const Secondary: Story = {
-  args: {
-    variant: "secondary",
-    label: "투표하기"
-  }
-};
-
-export const Large: Story = {
-  args: {
+    variant: "primaryBlue",
     size: "large",
-    variant: "primary",
+    label: "투표하기!"
+  }
+};
+
+export const PrimaryDark: Story = {
+  args: {
+    variant: "primaryDark",
+    size: "medium",
     label: "투표하기"
   }
 };
 
-export const Small: Story = {
+export const SecondaryGray: Story = {
   args: {
     size: "small",
-    variant: "secondary",
+    variant: "secondaryGray",
+    label: "투표하기"
+  }
+};
+
+export const SecondaryLight: Story = {
+  args: {
+    size: "extraSmall",
+    variant: "secondaryLight",
     label: "투표하기"
   }
 };
