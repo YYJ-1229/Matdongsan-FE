@@ -1,12 +1,24 @@
 @import "tailwindcss";
+@import "swiper/css";
+@import "swiper/css/pagination";
+
+@font-face {
+  font-family: "SUIT";
+  src: url("/src/font/suit/SUIT-Medium.ttf") format("truetype");
+}
 
 #root {
   width: 375px;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0px 16px 100px 16px;
   text-align: center;
   background: white;
+  font: "SUIT";
+}
+
+body {
+  font: "SUIT";
 }
 
 .logo {
@@ -43,4 +55,16 @@
 
 .read-the-docs {
   color: #888;
+}
+
+@theme {
+  --tracking-tightest: -0.02em;
+}
+
+.swiper-pagination-bullet {
+  background: var(--neutral-gray-30);
+}
+
+.swiper-pagination {
+  position: static;
 }

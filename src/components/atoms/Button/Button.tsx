@@ -1,4 +1,4 @@
-import "../../App.css";
+import "../../../App.css";
 
 export interface ButtonProps {
   variant: "primaryBlue" | "primaryDark" | "secondaryGray" | "secondaryLight";
