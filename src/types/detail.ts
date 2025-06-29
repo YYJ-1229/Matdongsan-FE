@@ -4,3 +4,13 @@ export interface FlipImageProps {
   descTitle: string;
   descDetail: string;
 }
+
+export interface FoodDetailInfo {
+  title: string;
+  desc: string;
+}
+
+export interface FoodIngredientInfo {
+  title: string;
+  data: string;
+}

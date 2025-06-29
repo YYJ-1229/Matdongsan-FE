@@ -23,7 +23,7 @@ export const FlipImageCard = ({
             <div className="relative w-full flex justify-center z-10">
               <img
                 className={"w-[312px] h-[316px]"}
-                src="/src/assets/Image/Corn.png"
+                src="/assets/Image/Corn.png"
               ></img>
             </div>
             {/* 앞면 */}
@@ -42,10 +42,7 @@ export const FlipImageCard = ({
                     </button>
                   </div>
                   <div className="w-1/2 flex justify-end ">
-                    <Icon
-                      size="medium"
-                      img="/src/assets/Icons/Heart.svg"
-                    ></Icon>
+                    <Icon size="medium" img="/assets/Icons/Heart.svg"></Icon>
                   </div>
                 </div>
               ) : (
