@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: "SUIT";
-  src: url("/src/font/suit/SUIT-Medium.ttf") format("truetype");
+  src: url("/assets/font/suit/SUIT-Medium.ttf") format("truetype");
 }
 
 :root {
