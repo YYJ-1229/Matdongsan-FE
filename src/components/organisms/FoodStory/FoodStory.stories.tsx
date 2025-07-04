@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { FoodDetail } from "./FoodDetail";
+import { FoodStory } from "./FoodStory";
 
-const meta: Meta<typeof FoodDetail> = {
-  title: "Components/Molecules/FoodDetail",
-  component: FoodDetail,
+const meta: Meta<typeof FoodStory> = {
+  title: "Components/Organisms/FoodStory",
+  component: FoodStory,
   tags: ["autodocs"],
   decorators: [
     (Story) => (
@@ -19,8 +19,5 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Example: Story = {
-  args: {
-    title: "제철시기",
-    desc: "7~8월"
-  }
+  args: {}
 };

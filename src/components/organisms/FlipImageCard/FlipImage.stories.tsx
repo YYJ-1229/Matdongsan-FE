@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { FlipImageCard } from "./FlipImage";
 
 const meta: Meta<typeof FlipImageCard> = {
-  title: "Components/FlipImage",
+  title: "Components/Organisms/FlipImage",
   component: FlipImageCard,
   tags: ["autodocs"]
 };

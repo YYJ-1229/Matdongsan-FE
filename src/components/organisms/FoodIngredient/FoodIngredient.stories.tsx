@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { FoodIngredient } from "./FoodIngredient";
 
 const meta: Meta<typeof FoodIngredient> = {
-  title: "Components/FoodIngredient",
+  title: "Components/Organisms/FoodIngredient",
   component: FoodIngredient,
   tags: ["autodocs"],
   decorators: [

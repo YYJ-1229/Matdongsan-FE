@@ -3,27 +3,12 @@ import { Title } from "../components/atoms/Title/Title";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import { FoodStory } from "../components/organisms/FoodStory/FoodStory";
-import { useQuery } from "@tanstack/react-query";
-import { getFoodInfo } from "../api/detail";
 
-interface foodId {
-  id: number;
-}
-
-export const Detail = ({ id }: foodId) => {
-  // data, isLoading, err
-  const { data } = useQuery({
-    queryKey: ["foodInfo", id],
-    queryFn: () => getFoodInfo(1),
-    enabled: !!id
-  });
-  console.log(data);
-
+export const Detail = () => {
   return (
     <>
       {/* 헤더 */}
       <div className="w-full h-14 flex py-[17px] px-5">
-        <p>{data?.id}</p>
         <Icon size="medium" img="/src/assets/Icons/leftArrow.svg"></Icon>
         <div className="w-full flex justify-center">
           <Title size="large" label="옥수수" />
